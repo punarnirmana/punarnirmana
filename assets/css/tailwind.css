@@ -831,10 +831,6 @@ video {
   width: 100%;
 }
 
-.w-60{
-  width: 15rem;
-}
-
 .w-\[30px\]{
   width: 30px;
 }
@@ -1361,7 +1357,7 @@ body {
 
 .navbar-logo {
   font-family: "Bellefair", cursive;
-  font-size: 2.5rem;
+  font-size: 2.35rem;
   color: #fff;
   text-transform: uppercase;
 }
@@ -1369,10 +1365,10 @@ body {
 .navbar-logo h1{
   width: 100%;
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-  --tw-gradient-from: #c18446;
-  --tw-gradient-to: rgb(193 132 70 / 0);
+  --tw-gradient-from: #fff;
+  --tw-gradient-to: rgb(255 255 255 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #fff;
+  --tw-gradient-to: #c18446;
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
@@ -1402,7 +1398,6 @@ em {
 }
 
 .sticky .navbar-logo h1{
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
   --tw-gradient-from: #3a1d00;
   --tw-gradient-to: rgb(58 29 0 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);

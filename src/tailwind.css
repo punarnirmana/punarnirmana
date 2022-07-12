@@ -10,12 +10,12 @@ body {
 
 .navbar-logo {
   font-family: "Bellefair", cursive;
-  font-size: 2.5rem;
+  font-size: 2.35rem;
   color: #fff;
   text-transform: uppercase;
 }
 .navbar-logo h1 {
-  @apply text-transparent w-full bg-clip-text bg-gradient-to-br from-primary to-white
+  @apply text-transparent w-full bg-clip-text bg-gradient-to-br from-white to-primary
 }
 
 strong.title,
@@ -33,7 +33,7 @@ em {
 }
 
 .sticky .navbar-logo h1 {
-  @apply bg-gradient-to-br from-dark to-primary
+  @apply from-dark to-primary
 }
 
 .sticky #navbarToggler span {
