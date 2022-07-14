@@ -7,6 +7,9 @@
 body {
   font-family: "Inter", sans-serif;
 }
+p,ul{
+  @apply mb-4
+}
 
 .navbar-logo {
   font-family: "Bellefair", cursive;
