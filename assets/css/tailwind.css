@@ -673,6 +673,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.25rem;
 }
 
+.mb-16{
+  margin-bottom: 4rem;
+}
+
 .mb-3{
   margin-bottom: 0.75rem;
 }
@@ -691,10 +695,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-0{
   margin-bottom: 0px;
-}
-
-.mb-16{
-  margin-bottom: 4rem;
 }
 
 .block{
@@ -1313,7 +1313,7 @@ em {
   font-family: "Bellefair", cursive;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.35em
+  font-size: 1.35em;
 }
 
 .sticky{

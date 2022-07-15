@@ -7,8 +7,9 @@
 body {
   font-family: "Inter", sans-serif;
 }
-p,ul{
-  @apply mb-4
+p,
+ul {
+  @apply mb-4;
 }
 
 .navbar-logo {
@@ -18,7 +19,7 @@ p,ul{
   text-transform: uppercase;
 }
 .navbar-logo h1 {
-  @apply text-transparent w-full bg-clip-text bg-gradient-to-br from-white to-primary
+  @apply text-transparent w-full bg-clip-text bg-gradient-to-br from-white to-primary;
 }
 
 strong.title,
@@ -26,7 +27,7 @@ em {
   font-family: "Bellefair", cursive;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.35em
+  font-size: 1.35em;
 }
 
 .sticky {
@@ -36,7 +37,7 @@ em {
 }
 
 .sticky .navbar-logo h1 {
-  @apply from-dark to-primary
+  @apply from-dark to-primary;
 }
 
 .sticky #navbarToggler span {
