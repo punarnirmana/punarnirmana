@@ -965,6 +965,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 0.05;
 }
 
+.bg-opacity-95{
+  --tw-bg-opacity: 0.95;
+}
+
+.bg-opacity-90{
+  --tw-bg-opacity: 0.9;
+}
+
+.bg-opacity-80{
+  --tw-bg-opacity: 0.8;
+}
+
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1448,6 +1460,11 @@ em {
 .group:hover .group-hover\:text-dark{
   --tw-text-opacity: 1;
   color: rgb(58 29 0 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-primary{
+  --tw-text-opacity: 1;
+  color: rgb(193 132 70 / var(--tw-text-opacity));
 }
 
 @media (min-width: 540px){
