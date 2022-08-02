@@ -14,9 +14,9 @@ ul {
 
 .navbar-logo {
   font-family: "Bellefair", cursive;
-  font-size: 2.35rem;
   color: #fff;
   text-transform: uppercase;
+  @apply text-2xl sm:text-4xl;
 }
 .navbar-logo h1 {
   @apply text-transparent w-full bg-clip-text bg-gradient-to-br from-white to-primary;
