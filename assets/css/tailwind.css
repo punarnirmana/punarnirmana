@@ -1010,6 +1010,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2rem;
 }
 
+.p-6{
+  padding: 1.5rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1116,10 +1120,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pl-\[62px\]{
   padding-left: 62px;
-}
-
-.pb-5{
-  padding-bottom: 1.25rem;
 }
 
 .text-left{
@@ -1321,8 +1321,8 @@ p, ul{
   font-family: "Bellefair", cursive;
   color: #fff;
   text-transform: uppercase;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 @media (min-width: 540px){
@@ -1449,11 +1449,6 @@ em {
   background-color: rgb(58 29 0 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-slate-50:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
-}
-
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1534,14 +1529,14 @@ em {
     line-height: 1.75rem;
   }
 
-  .sm\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .sm\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .sm\:leading-snug{
@@ -1817,6 +1812,11 @@ em {
     font-size: 40px;
   }
 
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .lg\:shadow-none{
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
@@ -1877,6 +1877,11 @@ em {
   .xl\:text-\[42px\]{
     font-size: 42px;
   }
+
+  .xl\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 1320px){
@@ -1890,5 +1895,10 @@ em {
 
   .\32xl\:text-\[40px\]{
     font-size: 40px;
+  }
+
+  .\32xl\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
