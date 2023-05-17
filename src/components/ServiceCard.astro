@@ -1,0 +1,25 @@
+---
+const { title, description, link } = Astro.props;
+---
+
+<a href={link} class="w-full md:w-1/2 px-4 block group">
+  <div class="bg-white mb-12 group wow fadeInUp" data-wow-delay=".1s">
+    <div
+      class="w-[70px] h-[70px] flex items-center justify-center bg-primary rounded-2xl mb-8 relative z-10"
+    >
+      <span
+        class="w-[70px] h-[70px] flex items-center justify-center bg-primary bg-opacity-20 rounded-2xl mb-8 absolute z-[-1] top-0 left-0 rotate-[25deg] group-hover:rotate-45 duration-300"
+      ></span>
+      <img src="/images/diya.svg" alt="Diya" width="40" />
+    </div>
+    <h4 class="font-bold text-xl text-dark mb-3">{title}</h4>
+    <p class="text-body-color mb-8 lg:mb-11">
+      {description}
+    </p>
+    <span
+      class="font-medium text-base text-body-color group-hover:text-primary"
+    >
+      Learn More
+    </span>
+  </div>
+</a>
