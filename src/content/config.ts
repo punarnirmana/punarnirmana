@@ -8,6 +8,7 @@ const services = defineCollection({
     subTitle: z.string().optional(),
     description: z.string(),
     heroImage: z.string().optional(),
+    order: z.number().optional(),
   }),
 });
 

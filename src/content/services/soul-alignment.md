@@ -1,8 +1,9 @@
 ---
-title: "Soul Alignment®"
-pageTitle: "Akashic Records Soul Alignment®"
+title: "Soul Alignment"
+pageTitle: "Akashic Records Soul Alignment"
 subTitle: "Past-lives Karma and Ancestral Deep Dive"
 description: "Past-lives Karma and Ancestral Deep Dive"
+order: 1
 ---
 
 The reading includes:

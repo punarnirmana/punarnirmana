@@ -2,4 +2,4 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 export const SITE_TITLE = "Punarnirmana";
-export const SITE_DESCRIPTION = "Aligning with oneself!";
+export const SITE_DESCRIPTION = "Medicine for soul mind and body";

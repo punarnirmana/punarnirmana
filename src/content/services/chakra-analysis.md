@@ -2,6 +2,7 @@
 title: "Akashic Record Chakra Analysis"
 pageTitle: "Akashic Record Chakra Analysis"
 description: "Gives overview of what you are focused on and may be neglecting, and any imbalances thus created in your life."
+order: 3
 ---
 
 This is an analysis of your Chakra System accessed via the Akashic Records. It gives one an incredibly overview of what you are focused on and may be neglecting, and any imbalances thus created in your life.

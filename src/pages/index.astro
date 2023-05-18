@@ -2,64 +2,31 @@
 import ServiceCard from "../components/ServiceCard.astro";
 import Layout from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
-const posts = await getCollection("services");
+const posts = await getCollection("services").then((p) =>
+  p.sort((a, b) => (a.data.order || 0) - (b.data.order || 0))
+);
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <Layout title="Home" heroImage="/placeholder-about.jpg">
   <!-- ====== Hero Section Start -->
   <div
     id="home"
-    class="relative pt-[120px] md:pt-[90px] lg:pt-[120px] md:pb-[320px] lg:pb-[360px] bg-cover bg-no-repeat bg-bottom"
-    style="background-image: url(/images/hero.jpg)"
+    class="banner"
+    style="background-image: url(/images/banner.jpg)"
   >
-    <div class="container pb-8">
-      <div class="flex flex-wrap items-center -mx-4">
-        <div class="w-full px-4">
-          <div
-            class="hero-content bg-dark/75 p-8 text-center max-w-[960px] mx-auto wow fadeInU"
-            data-wow-delay=".2s"
-          >
-            <h1
-              class="text-white font-normal text-2xl sm:text-3xl leading-snug sm:leading-snug md:leading-snug mb-8"
-            >
-              Welcome
-            </h1>
-            <p
-              class="text-base sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed mx-auto mb-10 text-[#e4e4e4] max-w-[780px]"
-            >
-              <strong class="title">Punarnirmana</strong> is all about aligning with
-              oneself: Who are you really? What do you truly aspire for? How will
-              you find most fulfillment? What is blocking you from abundance, good
-              health, love or success? Basically,
-              <strong class="title">Punarnirmana</strong> is all about knowing who
-              you are so that you can become 'Authentically You'.
-            </p>
-            <p
-              class="text-base sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed mx-auto mb-10 text-[#e4e4e4] max-w-[780px]"
-            >
-              Many people go through their life as if walking on carpet grass.
-              For them Life is based on social or moral codes crafted by other
-              people, cheat codes other people have curated and landmark events
-              and standards globally acclaimed. Incidentally, in the life of
-              such individuals, there is one major ingredient missing, and that
-              ingredient is 'they themselves'.
-            </p>
-          </div>
-        </div>
-      </div>
+    <div class="banner-text">
+      {SITE_DESCRIPTION}
     </div>
   </div>
   <!-- ====== Hero Section End -->
 
   <!-- ====== About Section Start -->
-  <section id="about" class="pt-20 lg:pt-[120px] pb-8 lg:pb-[70px]">
+  <!--   <section id="about" class="pt-20 lg:pt-[120px] pb-8 lg:pb-[70px]">
     <div class="container">
       <div class="flex flex-wrap -mx-4">
         <div class="w-full px-4">
           <div class="mb-12 lg:mb-20">
-            <!--             <span class="font-semibold text-lg text-primary mb-2 block">
-              Services
-            </span> -->
             <h2 class="font-normal text-2xl sm:text-3xl text-dark mb-4">
               How can our services benefit you?
             </h2>
@@ -102,12 +69,12 @@ const posts = await getCollection("services");
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- ====== About Section End -->
 
   <!-- ====== Knowledge Section Start -->
   <section
-    id="knowledge"
+    id="about"
     class="pt-20 lg:pt-[120px] pb-20 lg:pb-[120px] bg-primary bg-opacity-20"
   >
     <div class="container">
@@ -118,31 +85,38 @@ const posts = await getCollection("services");
               class="lg:flex items-center justify-between border overflow-hidden"
             >
               <div
-                class="lg:max-w-[565px] xl:max-w-[640px] w-full py-12 px-7 sm:px-12 md:p-16 lg:py-9 lg:px-16 xl:p-[70px]"
+                class="w-full py-12 px-7 sm:px-12 md:p-16 lg:py-9 lg:px-16 xl:p-[70px]"
               >
-                <!--                 <span class="text-sm font-medium text-white py-2 px-5 bg-primary inline-block mb-5">
-                  Knowledge
-                </span> -->
                 <h2 class="font-normal text-2xl text-dark mb-6">
-                  What are the <em>Akashic Records</em>?
+                  Energy Healing and Akashic Records Insights
                 </h2>
-                <p class="text-base text-body-color mb-9 leading-relaxed">
-                  <em>Akashic Records</em> are a collective database of all the universes
-                  co-existing simultaneously. The
-                  <em>Akashic Records</em> contain All the information about you
-                  as well. Past, present and future all co-exist in the
-                  <em>Akashic Records</em> therefore any guidance can be sought from
-                  them.
+
+                <p>
+                  Energy healing is an ancient practice that has been used for
+                  centuries to promote balance and healing in the body, mind,
+                  and soul.
                 </p>
-              </div>
-              <div class="text-center">
-                <div class="relative inline-block z-10">
-                  <img
-                    src="/images/about.jpg"
-                    alt="image"
-                    class="mx-auto lg:ml-auto"
-                  />
-                </div>
+                <p>
+                  The process of energy healing involves working with your own
+                  energy field, as well as the energies around you. This can
+                  include things such as chakras, auras, and other vibrational
+                  frequencies. One of the most powerful tools in energy healing
+                  is the Akashic Records insights. This is an ancient tool that
+                  can be used to gain insight into your own spiritual path and
+                  heal any blockages or imbalances in your energy field.
+                </p>
+                <p>
+                  If you're looking to gain insight, clarity, and a deeper
+                  understanding of your journey with greater success and taking
+                  your personal healing to the next level find the services
+                  offered.
+                </p>
+                <strong class="title">Punarnirmana</strong> is all about aligning
+                with oneself: Who are you really? What do you truly aspire for? How
+                will you find most fulfillment? What is blocking you from abundance,
+                good health, love or success? Basically,
+                <strong class="title">Punarnirmana</strong> is all about knowing
+                who you are so that you can become 'Authentically You'.
               </div>
             </div>
           </div>
@@ -156,7 +130,7 @@ const posts = await getCollection("services");
   <section id="services" class="pt-20 lg:pt-[120px] pb-8 lg:pb-[70px]">
     <div class="container">
       <h2 class="font-normal text-2xl text-dark mb-16">
-        What are the services we provide?
+        Readings and Hearings
       </h2>
       <div class="flex flex-wrap -mx-4">
         {

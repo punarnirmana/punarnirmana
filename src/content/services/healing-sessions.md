@@ -2,6 +2,7 @@
 title: "Healing Sessions"
 pageTitle: "Healing Sessions"
 description: "Remove the causes of spiritual, emotional and physical disorders."
+order: 4
 ---
 
 1. Aura & Chara Healing Session

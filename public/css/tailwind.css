@@ -1966,3 +1966,23 @@ em {
   padding-left: 1em;
   margin-bottom: 1em;
 }
+
+.banner {
+  background-color: #5d3706;
+  aspect-ratio: 16/9;
+  width: 100%;
+  background-image: url(/images/banner.jpg);
+  background-size: cover;
+  position: relative;
+}
+.banner-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 7%;
+  left: 0;
+  margin-bottom: 1em;
+  color: #ffde59;
+  font-family: "Bellefair", cursive;
+  font-size: 23px;
+}
