@@ -1,7 +1,7 @@
 ---
 title: "Akashic Record Chakra Analysis"
 pageTitle: "Akashic Record Chakra Analysis"
-description: "Gives overview of what you are focused on and may be neglecting, and any imbalances thus created in your life."
+description: "An overview of ‘Flow of Prana or Chi’ in your system and its impact in your life."
 order: 3
 ---
 
@@ -21,4 +21,4 @@ When you release any blockages within’ the chakra and balance them so that the
 
 Each chakra is located in a different spot along your spine and serves a different purpose. They also affect different organs and correlate with different ailments. Each one has its own color. They also directly relate to their own set of emotions, feelings, and behaviors. Each one can be worked on to heal the ailments that directly associate with it, once you realize which one is unbalanced or out of alignment. The chakras are a very sophisticated map of the energy body and directly affect our physical, mental and emotional bodies as well.
 
-**For EE and availability contact: contact us on [punarnirmana@gmail.com](mailto://punarnirmana@gmail.com)**
+**For EE and availability contact us on [punarnirmana@gmail.com](mailto://punarnirmana@gmail.com)**
