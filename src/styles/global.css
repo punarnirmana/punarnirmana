@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Style+Script&family=Bellefair&display=swap");
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
@@ -39,6 +39,10 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.banner-text {
+  font-family: "Style Script", cursive;
 }
 
 em {
@@ -162,4 +166,16 @@ em {
   padding-left: 1em;
   margin-bottom: 1em;
   margin-top: 0.25em;
+}
+
+.esProse ol {
+  list-style: decimal;
+  margin-left: 1em;
+  padding-left: 1em;
+  margin-bottom: 1em;
+  margin-top: 0.25em;
+}
+
+.esProse h2 {
+  margin-top: 3em;
 }
