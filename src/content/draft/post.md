@@ -7,4 +7,4 @@ description: "description"
 
 **Requirements for Reading**
 
-**For price and availability contact us on [punarnirmana@gmail.com](mailto://punarnirmana@gmail.com)**
+**For price and availability contact us on [punarnirmana@gmail.com](mailto:punarnirmana@gmail.com)**

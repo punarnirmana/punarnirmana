@@ -25,4 +25,4 @@ A clearing is done to reset the land to its original blueprint.
 - Street Address, City, State, Country
 - Any other information you would like to share.
 
-**For price and availability contact us on [punarnirmana@gmail.com](mailto://punarnirmana@gmail.com)**
+**For price and availability contact us on [punarnirmana@gmail.com](mailto:punarnirmana@gmail.com)**

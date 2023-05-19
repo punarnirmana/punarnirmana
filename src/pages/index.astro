@@ -5,7 +5,7 @@ import { getCollection } from "astro:content";
 const posts = await getCollection("services").then((p) =>
   p.sort((a, b) => (a.data.order || 0) - (b.data.order || 0))
 );
-import { SITE_DESCRIPTION } from "../consts";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <Layout title="Home" heroImage="/placeholder-about.jpg">

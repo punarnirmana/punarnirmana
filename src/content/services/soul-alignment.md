@@ -62,4 +62,4 @@ You will receive a PDF report answering all the above questions.
 - Birth Location (City, State, Country)
 - Exact Birth Time (am or pm)
 
-**For price and availability contact us on [punarnirmana@gmail.com](mailto://punarnirmana@gmail.com)**
+**For price and availability contact us on [punarnirmana@gmail.com](mailto:punarnirmana@gmail.com)**

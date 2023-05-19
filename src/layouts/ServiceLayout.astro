@@ -3,7 +3,7 @@ import Layout from "./Base.astro";
 const { title, pageTitle, subTitle } = Astro.props;
 ---
 
-<Layout>
+<Layout title={title}>
   <!-- ====== Banner Section Start -->
   <div
     class="relative z-1 pt-[120px] md:pt-[130px] lg:pt-[160px] pb-[100px] bg-gradient-to-r from-dark to-primary overflow-hidden"

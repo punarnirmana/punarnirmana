@@ -27,4 +27,4 @@ Thank you for understanding.
 
 BY PURCHASING ANY OF THESE SERVICES, IT IS AUTOMATICALLY ASSUMED THAT YOU AGREE WITH THE ABOVE.
 
-**For price and availability contact us on [punarnirmana@gmail.com](mailto://punarnirmana@gmail.com)**
+**For price and availability contact us on [punarnirmana@gmail.com](mailto:punarnirmana@gmail.com)**

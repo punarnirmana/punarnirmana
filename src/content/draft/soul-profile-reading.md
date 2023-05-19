@@ -31,4 +31,4 @@ You will receive a 21-day spiritual exercise to raise your shields of protection
 - Birth Location (City, State, Country)
 - Exact Birth Time (am or pm)
 
-**For price and availability contact us on [punarnirmana@gmail.com](mailto://punarnirmana@gmail.com)**
+**For price and availability contact us on [punarnirmana@gmail.com](mailto:punarnirmana@gmail.com)**
