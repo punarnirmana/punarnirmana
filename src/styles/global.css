@@ -1,67 +1,165 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Bellefair&display=swap");
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 body {
-	font-family: Verdana, sans-serif;
-	margin: auto;
-	padding: 20px;
-	max-width: 65ch;
-	text-align: left;
-	background-color: #fff;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	line-height: 1.5;
-	color: #444;
+  font-family: "Inter", sans-serif;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-b {
-	color: #222;
+
+.ud-header {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
-a {
-	color: #3273dc;
+
+.navbar-logo {
+  font-family: "Bellefair", cursive;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
-nav a {
-	margin-right: 10px;
+
+@media (min-width: 540px) {
+  .navbar-logo {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
-textarea {
-	width: 100%;
-	font-size: 16px;
+
+.navbar-logo h1 {
+  width: 100%;
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  --tw-gradient-from: #fff;
+  --tw-gradient-stops: var(--tw-gradient-from),
+    var(--tw-gradient-to, rgb(255 255 255 / 0));
+  --tw-gradient-to: #c18446;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
-input {
-	font-size: 16px;
+
+em {
+  font-family: "Bellefair", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.35em;
 }
-content {
-	line-height: 1.6;
+
+.sticky {
+  position: fixed;
+  z-index: 9999;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.8;
+  transition-property: color, background-color, border-color, fill, stroke,
+    opacity, box-shadow, transform, filter, -webkit-text-decoration-color,
+    -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
 }
-table {
-	width: 100%;
+
+.sticky .navbar-logo h1 {
+  --tw-gradient-from: #3a1d00;
+  --tw-gradient-stops: var(--tw-gradient-from),
+    var(--tw-gradient-to, rgb(58 29 0 / 0));
+  --tw-gradient-to: #c18446;
 }
-img {
-	max-width: 100%;
-	height: auto;
+
+.sticky #navbarToggler span {
+  --tw-bg-opacity: 1;
+  background-color: rgb(58 29 0 / var(--tw-bg-opacity));
 }
-code {
-	padding: 2px 5px;
-	background-color: #f2f2f2;
+
+.sticky #navbarCollapse li a {
+  --tw-text-opacity: 1;
+  color: rgb(58 29 0 / var(--tw-text-opacity));
 }
-pre {
-	padding: 1rem;
+
+.sticky #navbarCollapse li a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(193 132 70 / var(--tw-text-opacity));
+  opacity: 1;
 }
-pre > code {
-	all: unset;
+
+#navbarCollapse li .ud-menu-scroll.active {
+  opacity: 0.7;
 }
-blockquote {
-	border: 1px solid #999;
-	color: #222;
-	padding: 2px 0px 2px 20px;
-	margin: 0px;
-	font-style: italic;
+
+.sticky #navbarCollapse li .ud-menu-scroll.active {
+  --tw-text-opacity: 1;
+  color: rgb(193 132 70 / var(--tw-text-opacity));
+  opacity: 1;
+}
+
+.sticky .loginBtn {
+  --tw-text-opacity: 1;
+  color: rgb(58 29 0 / var(--tw-text-opacity));
+}
+
+.sticky .loginBtn:hover {
+  --tw-text-opacity: 1;
+  color: rgb(193 132 70 / var(--tw-text-opacity));
+  opacity: 1;
+}
+
+.sticky .signUpBtn {
+  --tw-bg-opacity: 1;
+  background-color: rgb(193 132 70 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.sticky .signUpBtn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(58 29 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.navbarTogglerActive > span:nth-child(1) {
+  top: 7px;
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.navbarTogglerActive > span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbarTogglerActive > span:nth-child(3) {
+  top: -8px;
+  --tw-rotate: 135deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.shadow-testimonial {
+  --tw-shadow: 0px 60px 120px -20px #ebeffd;
+  --tw-shadow-colored: 0px 60px 120px -20px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.esProse p {
+  margin: 1em 0;
+}
+.esProse ul {
+  list-style: disc;
+  margin-left: 1em;
+  padding-left: 1em;
+  margin-bottom: 1em;
+  margin-top: 0.25em;
 }

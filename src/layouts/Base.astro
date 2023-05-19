@@ -3,6 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import "../styles/global.css";
 ---
 
 <!DOCTYPE html>
@@ -10,6 +11,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <!-- head -->
+    <link rel="stylesheet" href="/css/animate.css" />
     <script
       type="text/partytown"
       src="https://www.googletagmanager.com/gtag/js?id=G-ZKZB74VSEH"
