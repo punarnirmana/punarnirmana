@@ -5,7 +5,7 @@ description: "Remove the causes of spiritual, emotional and physical disorders."
 order: 4
 ---
 
-1. Aura & Chara Healing Session
+1. Aura & Chakra Healing Session
 1. 97 Issues Removal Session
 1. Inner Wounds Healing Session
 1. Clearing the Akashic Records Mini Healing Session
